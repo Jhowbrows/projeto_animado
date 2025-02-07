@@ -1,5 +1,69 @@
-$bgColor: red;
+@use 'header';
+@use 'home';
+@use 'sinopse';
+@use 'characters';
+@use 'watch';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    list-style: none;
+}
 
 body {
-    background-color: $bgColor;
+    background: url('../../dist/images/Poster_fundo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height:  $fontSize + 10px;
+}
+
+@mixin title ($fontSize: 30px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    font-weight: bold
+}
+
+.text--small {
+    @include text(17px);
+}
+
+.text {
+    @include text(20px);
+}
+
+.text--big {
+    @include text (30px);
+}
+
+.title {
+    @include title;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+section {
+   padding: 70px 40px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 2.5em;
+    }
 }

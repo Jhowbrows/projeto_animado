@@ -1,0 +1,25 @@
+.home {
+    padding: 5.6vw;
+    min-height: 100vh;
+    align-content: center;
+    
+    @media (max-width: 768px) {
+        display: block;
+        margin-top: 1vh;
+        
+    }
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        color: white;
+        
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+    }
+}

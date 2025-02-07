@@ -1,0 +1,47 @@
+.watch {
+    min-height: 100vh;
+    background-image: url('../../dist/images/Fundo_watch.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 0 15px rgba(0,0,0,1);
+
+    &__container {   
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+
+        &__image {
+            margin-bottom: 12px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 0 15px rgba(0,0,0,1);
+            }
+        }
+
+
+        button {
+            align-content: center;
+            margin: 0 auto;
+            padding: 8px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(211, 11, 11);
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,1);
+            cursor: pointer;
+            transition: .4s ease;
+
+            &:hover {
+               background-color: lighten(rgb(211, 11, 11),  3%);
+            }
+        }
+        
+    }
+}

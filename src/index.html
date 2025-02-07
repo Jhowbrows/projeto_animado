@@ -3,9 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Castelo Animado</title>
+    <link rel="stylesheet" href="../dist/css/main.css">
 </head>
 <body>
-    
+    <header class="header">
+        
+        <nav class="header__nav">
+            <h1><img src="../dist/images/logo.png" alt="castelo" class="header__logo"></h1>
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item"><a href="#home">Home</a></li>
+                <li class="header__nav__list__item"><a href="#sinopse">Sinopse</a></li>
+                <li class="header__nav__list__item"><a href="#characters">Personagens</a></li>
+                <li class="header__nav__list__item"><a href="#assista">Assista</a></li>
+            </ul>
+        </nav>
+
+        <nav class="header__mobile">
+            <h1><img src="../dist/images/logo.png" alt="Castelo" class="header__logo"></h1>
+            <ul class="header__mobile__links">
+                <li class="header__mobile__links__item">
+                    <a class="text" href="#home">Home</a>
+                </li>
+                <li class="header__mobile__links__item">
+                    <a class="text" href="#sinopse">Sinopse</a>
+                </li>
+                <li class="header__mobile__links__item">
+                    <a class="text" href="#characters">Personagens</a>
+                </li>
+                <li class="header__mobile__links__item">
+                    <a class="text" href="#assista">Assista</a>
+                </li>
+            </ul>
+            <div class="header__mobile__toggle" data-menu-toggle>
+                <span class="header__mobile__toggle__bar"></span>
+                <span class="header__mobile__toggle__bar"></span>
+                <span class="header__mobile__toggle__bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home__content">
+            <h1>O Castelo Animado</h1>
+            <p>Uma aventura mágica sobre amor, coragem e transformação</p>
+        </div>
+    </section>
+
+    <section id="sinopse" class="sinopse">
+        <div class="sinopse__container">
+            <div class="sinopse__container__imagem">
+                <img src="../dist/images/Poster_home.jpg"  class="sinopse__container__imagem_poster" alt="poster o Castelo Animado">
+            </div>
+            <div class="sinopse__container__text">
+                <h2 class="title">Sinopse</h2>
+                <br>
+                <p class="text">Sophie, uma jovem chapeleira, é transformada em uma idosa por uma maldição lançada pela Bruxa do Deserto. Em sua jornada para quebrar o feitiço, ela encontra Howl, um misterioso mago que vive em um castelo ambulante. Juntos, eles embarcam em uma aventura emocionante, repleta de magia, criaturas fantásticas e descobertas sobre si mesmos. Ao longo do caminho, Sophie descobre que a verdadeira magia está no amor e na aceitação de quem somos.</p>
+                <br>
+                <p class="text--small">Direção: Hayao Miyazaki • Estúdio Ghibli • 2004</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="characters" class="characters">
+        <div class="characters__container">
+            <h2 class="title">Personagens Principais</h2>
+            <ul class="characters__container__grid">
+                <li class="characters__container__grid__card">
+                    <div class="characters__grid__card_img">
+                        <img src="../dist/images/Sophie_card.jpg" alt="Sophie">
+                    </div>
+                    <div class="characters__container__grid__card__info">
+                        <h3 class="title">Sophie</h3>
+                        <p class="text">Uma jovem chapeleira que é transformada em uma idosa por uma maldição. Determinada e corajosa, ela busca uma maneira de quebrar o feitiço.</p>
+                    </div>
+                </li>
+
+                <li class="characters__container__grid__card">
+                    <div class="characters__container__grid__card__img">
+                        <img src="../dist/images/howl_card.jpg" alt="Howl">
+                    </div>
+                    <div class="characters__container__grid__card__info">
+                        <h3 class="title">Howl</h3>
+                        <p class="text">Um mago poderoso e misterioso, dono do castelo ambulante. Apesar de sua reputação de egoísta, ele esconde um coração gentil.</p>
+                    </div>
+                </li>
+
+                <li class="characters__container__grid__card">
+                    <div class="characters__container__grid__card__img">
+                        <img src="../dist/images/calcifer_card.jpg" alt="Calcifer">
+                    </div>
+                    <div class="characters__container__grid__card__info">
+                        <h3 class="title">Calcifer</h3>
+                        <p class="text">Um demônio de fogo que mantém o castelo ambulante em movimento. Ele faz um pacto com Sophie para ajudá-la a quebrar a maldição.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="assista" class="watch">
+        <div class="watch__container">
+            <div class="watch__container__image">
+                    <img src="../dist/images/Card_watch.jpg" alt="">
+            </div>
+            <button class="text">Assista Agora</button>
+        </div>
+    </section>
+
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

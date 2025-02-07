@@ -1,0 +1,95 @@
+.sinopse{
+    background-image: url('../../dist/images/fundo_sinopse.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    box-shadow: 0 0 15px rgba(0,0,0,1);
+
+
+    
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 35px;
+        
+        @media (max-width: 768px) {
+            flex-direction: column;
+            width: 100%;
+            
+        }
+
+        @media (max-width: 1800px) {
+            
+        }
+        
+        &__imagem {
+            background-color: transparent;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0);
+            line-height: 1.6;
+            max-width: 30%;
+            width: 100%;
+            
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+            
+            @media (max-width: 768px) {
+                max-width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            @media (max-width: 1800px) {
+                max-width: 100%;
+            }
+
+        }
+
+        &__text {
+            font-size: 20px;
+            color: #fffefe;
+            font-weight: bold;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+                max-height:100%;
+                width: 100%;    
+                
+
+                p {
+                    width: 100%;
+                }
+            }
+
+            @media (max-width: 1800px) {
+                max-width: 50%;
+            }
+
+            h2 {
+                font-size: 34px;
+                font-weight: bold;
+                font-style: italic;
+            }
+            
+        }
+
+    }
+}
